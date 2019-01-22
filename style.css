@@ -1,0 +1,425 @@
+/* *{
+  box-sizing: border-box;
+} */
+
+/* importing Avenir font weights */
+@import "Assets/Avenir/._AvenirLTStd-Book.otf";
+@font-face {
+  font-family: 'Avenir';
+  src: url('Assets/Avenir/._AvenirLTStd-Book.otf');
+  font-style: normal;
+  font-weight: 100;
+}
+
+.year-title {
+  z-index: 2;
+  font-family: 'AvenirLTStd-Black';
+  font-size: 33px;
+  position: absolute;
+  width: 321px;
+  height: 85.50px;
+  top: 48.75px;
+  left: 52.50px;
+  margin: auto;
+  line-height: normal;
+
+}
+
+.Main-heading {
+  width: 321px;
+  height: 85.50px;
+  top: 48.75px;
+  left: 52.50px;
+}
+
+.Sub-heading {
+  width: 684px;
+  height: 112.5px;
+  z-index: 2;
+  font-size: 18px;
+  position: absolute;
+  top: 173.25px;
+  left: 52.50px;
+  margin: auto;
+  line-height: auto;
+}
+
+p {
+    font-family: 'Avenir';
+    font-weight: 100;
+    font-size: 24px;
+}
+
+body{
+  margin: 0;
+  font-family: 'AvenirLTStd-Book', 'Tahoma', Geneva, Verdana, san-serif;
+  font-size: 0.8333333333333334rem;
+  line-height: 1.5;
+  color: #ffffff
+  overflow-x: hidden;
+}
+
+.content-line {
+  border: 3px;
+  border-color: #FFC400;
+  top: 350px;
+  left:52.50px;
+  z-index: 3;
+}
+
+.v-header{
+  /* height: 100vh; */
+  display: flex;
+  align-items: center;
+  color: #ffffff
+}
+
+.container{
+  /* max-width:960px; */
+  padding-left:1rem;
+  padding-right: 1rem;
+  margin: auto;
+  text-align: left;
+}
+
+.fullscreen-video-wrap{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%
+  height: 100vh;
+  overflow: hidden;
+}
+
+.fullscreen-video-wrap video{
+width: 100vw;
+height: 100vh;
+object-fit: cover;
+}
+
+video {
+  object-fit: contain;
+}
+
+.header-overlay{
+height: 100vh;
+width: 100vw;
+/* the line below extends the overlay to the entire viewport */
+position: fixed;
+top: 0;
+left: 0;
+background: #000000;
+z-index: 1;
+opacity: 0.60;
+}
+
+.header-content{
+  z-index: 2;
+  background: none;
+  top: 65px;
+  left: 70px;
+}
+
+.header-content h1{
+  font-family: 'AvenirLTStd-Black'
+  font-size: 44px;
+  margin-bottom: 0;
+}
+
+.header-content p{
+  font-family: 'AvenirLTStd-Book', 'Tahoma', Geneva, Verdana, san-serif;
+  font-size: 1rem;
+  display: block;
+  padding-bottom: 2rem;
+}
+
+
+
+.learn-more-btn {
+  /* width: 300px;
+  height: 60px;
+  border-color: #FFC400;
+  background: transparent;
+  border-radius: 100px;
+  font-size:1.2rem;
+  padding: 1rem 2rem;
+  text-decoration: none; */
+  position: relative;
+  top: 0px;
+  left: 855px;
+  bottom: 947px;
+  width: 157.50px;
+  height: 45px;
+  margin: 0px;
+  color: white;
+  font-size: 1.5rem;
+  background-color: transparent;
+  border: 2px solid #FFC400;
+  text-decoration: none;
+  border-radius: 100px;
+  z-index: 3;
+}
+
+.btn {
+  font-size: 16.50px;
+  position: relative;
+  font-family: 'AvenirLTStd-Book';
+  text-decoration: none;
+  color: #FFC400;
+}
+
+.learn-more-btn-svg {
+    z-index: 3;
+    top: 710px;
+    left: 50vw;
+    width: 210px;
+    height: 60px;
+    background: none;
+}
+
+.actual-button {
+  position: absolute;
+  top: 88vh;
+  left: 47.5vw;
+}
+
+.nostalgia-icon-container {
+z-index: 3;
+top: 810px;
+left: 70px;
+}
+
+.nostalgia-icon {
+  position: absolute;
+  top: 70vh;
+  left: 3vw;
+}
+
+/* navigation thumbnails below */
+
+.uni-thumbnail {
+  position: absolute;
+  z-index: 3;
+  top: 40vh;
+  left: 47.5vw;
+}
+
+.blue-room-thumbnail {
+  position: absolute;
+  z-index: 3;
+  top: 44vh;
+  left: 75vw;
+  width: 100px;
+  height: 100px;
+}
+
+.blue-room-thumbnail:hover {
+  top: 42.5vh;
+  left: 75vw;
+  width: 130px;
+  height: 130px;
+}
+
+.link-1999 {
+  position: absolute;
+  z-index: 3;
+  top: 44vh;
+  left: 75vw;
+  width: 100px;
+  height: 100px;
+  visibility: hidden;
+}
+
+.ui-toggles {
+  z-index: 3;
+  position: absolute;
+  top: 4.5vh;
+  left: 83vw;
+}
+
+/* body content below */
+.body-content-container {
+  z-index: 3;
+}
+
+.content-1996 {
+  position: absolute;
+  top: 3vh;
+  left: 2.5vw;
+  padding: 1%;
+}
+
+@font-face {
+  font-family: Avenir-Black;
+  src: url(Assets/Avenir/AvenirLTStd-Black.otf);
+  font-family: Avenir-Heavy;
+  src: url(Assets/Avenir/AvenirLTStd-Heavy.otf);
+  font-family: Avenir-Medium;
+  src: url(Assets/Avenir/AvenirLTStd-Medium.otf);
+  font-family: Avenir-Book;
+  src: url(Assets/Avenir/AvenirLTStd-Book.otf);
+  font-family: Avenir-Oblique;
+  src: url(Assets/Avenir/._AvenirLTStd-Oblique.otf);
+}
+.year-description {
+  position: relative;
+  display: inline;
+  font-family: 'Avenir-Heavy', Arial;
+  font-size: 35px;
+  color: white;
+  z-index: 3;
+  margin: 0;
+  top: 42vh;
+  left: 44.5vw;
+}
+
+@media(max-width: 960px){
+  .container{
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+}
+
+
+.year-count {
+  z-index: 3;
+  font-family: 'Avenir-Black';
+  display: inline-block;
+  position: relative;
+  font-size: 160px;
+  color: white;
+  opacity: 0.25;
+  top: 61vh;
+  left: 58vw;
+  margin: 0;
+}
+
+.nostalgia-overlay-card {
+  /* line below makes everything vivible/invisible */
+  /* display: none; */
+  visibility: hidden;
+  z-index: 10;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+
+  transition: all 500ms;
+}
+
+.close-button2 {
+  z-index: 200;
+}
+
+.close-button {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+}
+
+.lrn-more-card {
+  z-index: 20;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  background: white;
+}
+
+.lrn-more-h1 {
+  font-family: 'Avenir-Black';
+  font-size: 34px;
+  color: #999999;
+  display: inline-block;
+  /* background-color: green; */
+  margin-left: 25%;
+  margin-right: 25%;
+
+}
+
+.lrn-more-h2 {
+  position: relative;
+  top: -9.3vh;
+  float: right;
+  font-family: 'Avenir-Black';
+  font-size: 34px;
+  color: #999999;
+  display: inline-block;
+  /* background-color: green; */
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.gallery-img-container {
+  width: 564px;
+  height:380px;
+  background-color: rgba(0, 0, 0, 0.08);
+  border-radius: 15px;
+  position: inherit;
+  display: inline-block;
+  margin-top: 10%;
+  margin-left: 16%;
+  margin-right: 60%;
+}
+
+.gallery-description {
+  padding-top: 25%;
+  padding-left: 43%;
+  font-family: 'Avenir-Heavy';
+  color: #999999;
+}
+
+.author-image-thumbnail {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  color: #969696;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.20);
+  display: inline-block;
+  z-index: 200px;
+}
+
+.quote-box-container {
+  width: 760px;
+  height:357px;
+  background-color: rgba(0, 0, 0, 0.08);
+  border-radius: 15px;
+  position: inherit;
+  display: inline-block;
+  margin-top: 10%;
+  margin-left: 1%;
+  margin-right: 60%;
+}
+
+.quoted-text {
+  text-align: center;
+  line-height: 1.3em;
+  padding: 5%;
+  width: 683px;
+  height: 214px;
+  font-family: 'Avenir-Oblique';
+  font-size: 20px;
+  color: #999999;
+}
+
+.author-name {
+  margin-top: -6%;
+  /* padding-bottom: 1%; */
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Avenir-Black';
+  color: #969696;
+}
+
+.author-description {
+  margin-top: -3%;
+  padding: none;
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Avenir-Oblique';
+  color: #999999;
+}
+/* continue watching tutorial@ https://www.youtube.com/watch?v=Xy3GlrddZFI from 18:55*/
